@@ -13,9 +13,7 @@ function Weather() {
   let fetchApi = async () => {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=90c37cd483119fc243fc2b35a4c0ce45`;
     const response = await fetch(url);
-    console.log(response);
     const resJsonData = await response.json();
-    console.log(resJsonData);
     // setweatherdata(resJsonData.main);
     setweatherdata(resJsonData);
   };
@@ -74,7 +72,7 @@ function Weather() {
               </div>
             </>
           ) : (
-            <h3>Error</h3>
+            <span></span>
           )}
         </div>
       </div>
