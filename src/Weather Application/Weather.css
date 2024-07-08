@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2px 50px;
+}
+.main-1 input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500px;
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid orangered;
+
+  margin-bottom: 25px;
+  color: #00eaff;
+  padding-left: 30px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+input::placeholder {
+  color: #fff;
+}
+span {
+  font-size: 12px;
+  color: #fff;
+}
+/* input:hover{
+    border: none;
+} */
+.main-2 {
+  width: 500px;
+  height: 300px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.2) url(weatherbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid orangered;
+}
+.main-2 .left {
+  text-align: center;
+}
+.main-2 .left .icon {
+  font-size: 5rem;
+  color: #ffffff89;
+}
+
+.main-2 .right h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  color: #ffffffc4;
+  margin-bottom: 10px;
+  /* font-weight: 800; */
+  /* font-style: italic; */
+}
+.main-2 .right h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+
+  /* font-style: italic; */
+}
+.main-2 .right h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #00caf7;
+
+  /* font-style: italic; */
+}
+.main-2 .right h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 5px;
+  /* font-style: italic; */
+}
+
+button {
+  margin-left: 20px;
+  width: 100px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 7px;
+  background-color: orangered;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all ease 500ms;
+}
+
+button:hover {
+  background-color: #fff;
+  color: orangered;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  .main-section {
+    padding: 2px 30px;
+  }
+  .main-2 {
+    width: 450px;
+  }
+
+  .main-1 input {
+    width: 200px;
+    height: 40px;
+    padding-left: 3px;
+  }
+}
